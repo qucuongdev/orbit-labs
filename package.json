@@ -1,0 +1,40 @@
+{
+  "name": "rocket-simulator-3d",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test src/physics/*.test.js src/global/*.test.js",
+    "test:e2e": "playwright test",
+    "models:generate": "node scripts/generate-vehicles.mjs",
+    "lint": "eslint src/global src/App.jsx scripts"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.16",
+    "cesium": "^1.146.0",
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.2",
+    "leaflet": "1.9.4",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.160.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^9.39.5",
+    "postcss": "^8.5.31",
+    "tailwindcss": "^3.4.19",
+    "vite": "^5.1.4",
+    "vite-plugin-static-copy": "^1.0.6"
+  }
+}
